@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AB3DCE6A-88B0-450F-8DDF-0B7554D536CA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "567D7C78-AA5B-411C-8CA3-F807FBB86534"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "updateDataSource()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "567D7C78-AA5B-411C-8CA3-F807FBB86534 - 92c9677cce83e862"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "567D7C78-AA5B-411C-8CA3-F807FBB86534 - 2dca44f2bdf3b97c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVMMedibankTest.HeadlineTableViewCell, MVVMMedibankTest.HeadlineData) -&gt; () in MVVMMedibankTest.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D5DD748-6442-4BD5-A66F-9562472B318B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "getHeadlinesData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "933E4EC6-B928-4A91-82E2-2609F06C0B64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getHeadlinesData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2229563D-5C5A-49CD-B7CC-3A9B64D21EA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getHeadlinesData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4120611-0626-4720-B3EE-9B9465AC659D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Partials/HeadlineTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "headline"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAD42EEF-DB71-413B-AA51-47DE840F6562"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/HeadlineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "updateDataSource()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FAD42EEF-DB71-413B-AA51-47DE840F6562 - 6ca219b087c2246d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.HeadlineViewController.updateDataSource() -&gt; ()"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/HeadlineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "771">
+               </Location>
+               <Location
+                  uuid = "FAD42EEF-DB71-413B-AA51-47DE840F6562 - e7a213e2b2f55d10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in MVVMMedibankTest.HeadlineViewController.updateDataSource() -&gt; ()"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/HeadlineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/SourceViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SourceViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462 - ea10c8917fcd867c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.SourceViewController.sourceTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/SourceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462 - 22acaf59f88faa88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.SourceViewController.sourceTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/SourceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462 - 92f21500c6f1e3ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.SourceViewController.sourceTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/SourceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462 - dcda58b2de358d85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.SourceViewController.sourceTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/SourceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462 - bd81e37c88306c03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.SourceViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MVVMMedibankTest.SourceViewController"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/SourceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "27CE7FA5-F59B-4315-89E3-A951A91A4462 - 5d5854ddb41ff2c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMMedibankTest.SourceViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MVVMMedibankTest.SourceViewController&gt;"
+                  moduleName = "MVVMMedibankTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jk4zt/Documents/Towcha/MediBank/Test/Code/mvvmtest/MVVMMedibankTest/Controllers/SourceViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A0BCF39-BA42-4B55-AF48-7B7994E2359D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/HeadlineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB934C8D-4CC0-490B-9C3A-C9FFD76B6D17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Partials/HeadlineTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "setSelected(_:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "562065B5-FF22-4663-A7A6-144B3C3637A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/HeadlineDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA7FF063-B26F-428F-9FD4-2DCEFEF0B837"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/HeadlineDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "webView(_:didFail:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED202250-DDE4-4D8C-B878-BE17E5A87842"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/HeadlineDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "loadURL()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "909B535D-A2D5-4816-9DFF-2CFE61B7AF0A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMMedibankTest/Controllers/HeadlineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
