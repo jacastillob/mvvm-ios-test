@@ -40,4 +40,21 @@ class APIService :  NSObject {
         }
         task.resume()
     }
+    
+    func getSavedHeadlinesData(completion : @escaping (SavedHeadlines) -> ()){
+        
+        let sourcesURL = URL(string: "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines")!
+     
+        let task = URLSession.shared.dataTask(with: sourcesURL) { data, response, error in
+            //print(String(data: data!, encoding: .utf8))
+            if let payload = data {
+                let jsonDecoder = JSONDecoder()
+                let savedHeadlinesData = try! jsonDecoder.decode(SavedHeadlines.self, from: payload)
+                completion(savedHeadlinesData)
+            }
+        }
+        task.resume()
+    }
+    
+    
 }

@@ -25,6 +25,10 @@
 		8DD56DB826C6A380000355A4 /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD56DB726C6A380000355A4 /* SourceTableViewCell.swift */; };
 		8DD56DBB26CB4CE2000355A4 /* HeadlineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD56DBA26CB4CE0000355A4 /* HeadlineDetailViewController.swift */; };
 		8DF27FB526CBF40E00F38AB1 /* SavedHeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF27FB426CBF40E00F38AB1 /* SavedHeadlineViewController.swift */; };
+		8DF27FB926CCEA6B00F38AB1 /* SavedHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF27FB826CCEA6B00F38AB1 /* SavedHeadline.swift */; };
+		8DF27FBD26CCEB8700F38AB1 /* SavedHeadlinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF27FBC26CCEB8700F38AB1 /* SavedHeadlinesViewModel.swift */; };
+		8DF27FC026CCEBBC00F38AB1 /* SavedHeadlineTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF27FBF26CCEBBC00F38AB1 /* SavedHeadlineTableViewDataSource.swift */; };
+		8DF27FC326CCEF6500F38AB1 /* SavedHeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF27FC226CCEF6500F38AB1 /* SavedHeadlineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		8DD56DB726C6A380000355A4 /* SourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		8DD56DBA26CB4CE0000355A4 /* HeadlineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineDetailViewController.swift; sourceTree = "<group>"; };
 		8DF27FB426CBF40E00F38AB1 /* SavedHeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHeadlineViewController.swift; sourceTree = "<group>"; };
+		8DF27FB826CCEA6B00F38AB1 /* SavedHeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHeadline.swift; sourceTree = "<group>"; };
+		8DF27FBC26CCEB8700F38AB1 /* SavedHeadlinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHeadlinesViewModel.swift; sourceTree = "<group>"; };
+		8DF27FBF26CCEBBC00F38AB1 /* SavedHeadlineTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHeadlineTableViewDataSource.swift; sourceTree = "<group>"; };
+		8DF27FC226CCEF6500F38AB1 /* SavedHeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHeadlineTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			children = (
 				8DD56DA426C67724000355A4 /* HeadlineTableViewCell.swift */,
 				8DD56DB726C6A380000355A4 /* SourceTableViewCell.swift */,
+				8DF27FC226CCEF6500F38AB1 /* SavedHeadlineTableViewCell.swift */,
 			);
 			path = Partials;
 			sourceTree = "<group>";
@@ -107,10 +116,9 @@
 		8DD56D8C26C675DC000355A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8DD56DA126C676F5000355A4 /* HeadlineViewController.swift */,
-				8DD56DB426C6A2B9000355A4 /* SourceViewController.swift */,
-				8DD56DBA26CB4CE0000355A4 /* HeadlineDetailViewController.swift */,
-				8DF27FB426CBF40E00F38AB1 /* SavedHeadlineViewController.swift */,
+				8DF27FC726CCF14800F38AB1 /* SavedHeadline */,
+				8DF27FC626CCF13400F38AB1 /* Source */,
+				8DF27FC526CCF12200F38AB1 /* Headline */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 		8DD56D8F26C675F9000355A4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8DF27FBB26CCEB6500F38AB1 /* SavedHeadlines */,
 				8DD56DAD26C6A1A2000355A4 /* Sources */,
 				8DD56DAC26C6A190000355A4 /* Headlines */,
 			);
@@ -137,6 +146,7 @@
 			children = (
 				8DD56D9126C67639000355A4 /* Headline.swift */,
 				8DD56D9526C6764E000355A4 /* Source.swift */,
+				8DF27FB826CCEA6B00F38AB1 /* SavedHeadline.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +167,40 @@
 				8DD56DB126C6A1FE000355A4 /* SourcesViewModel.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		8DF27FBB26CCEB6500F38AB1 /* SavedHeadlines */ = {
+			isa = PBXGroup;
+			children = (
+				8DF27FBC26CCEB8700F38AB1 /* SavedHeadlinesViewModel.swift */,
+				8DF27FBF26CCEBBC00F38AB1 /* SavedHeadlineTableViewDataSource.swift */,
+			);
+			path = SavedHeadlines;
+			sourceTree = "<group>";
+		};
+		8DF27FC526CCF12200F38AB1 /* Headline */ = {
+			isa = PBXGroup;
+			children = (
+				8DD56DBA26CB4CE0000355A4 /* HeadlineDetailViewController.swift */,
+				8DD56DA126C676F5000355A4 /* HeadlineViewController.swift */,
+			);
+			path = Headline;
+			sourceTree = "<group>";
+		};
+		8DF27FC626CCF13400F38AB1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8DD56DB426C6A2B9000355A4 /* SourceViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8DF27FC726CCF14800F38AB1 /* SavedHeadline */ = {
+			isa = PBXGroup;
+			children = (
+				8DF27FB426CBF40E00F38AB1 /* SavedHeadlineViewController.swift */,
+			);
+			path = SavedHeadline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,15 +279,19 @@
 				8DD56DBB26CB4CE2000355A4 /* HeadlineDetailViewController.swift in Sources */,
 				8DD56D7726C674F8000355A4 /* AppDelegate.swift in Sources */,
 				8DD56D9C26C676A1000355A4 /* HeadlineTableViewDataSource.swift in Sources */,
+				8DF27FC026CCEBBC00F38AB1 /* SavedHeadlineTableViewDataSource.swift in Sources */,
 				8DD56D7926C674F8000355A4 /* SceneDelegate.swift in Sources */,
 				8DD56DB526C6A2B9000355A4 /* SourceViewController.swift in Sources */,
 				8DD56D9626C6764E000355A4 /* Source.swift in Sources */,
 				8DD56D9926C67686000355A4 /* HeadlinesViewModel.swift in Sources */,
+				8DF27FBD26CCEB8700F38AB1 /* SavedHeadlinesViewModel.swift in Sources */,
 				8DD56DB226C6A1FE000355A4 /* SourcesViewModel.swift in Sources */,
+				8DF27FB926CCEA6B00F38AB1 /* SavedHeadline.swift in Sources */,
 				8DF27FB526CBF40E00F38AB1 /* SavedHeadlineViewController.swift in Sources */,
 				8DD56DAF26C6A1D6000355A4 /* SourceTableViewDataSource.swift in Sources */,
 				8DD56D9F26C676C6000355A4 /* APIService.swift in Sources */,
 				8DD56D9226C67639000355A4 /* Headline.swift in Sources */,
+				8DF27FC326CCEF6500F38AB1 /* SavedHeadlineTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
