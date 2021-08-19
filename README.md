@@ -5,10 +5,14 @@
 ## Screenshots
 
 ![image](https://user-images.githubusercontent.com/17581178/129751970-cf050dc5-31d5-45c9-873c-810f18c06db5.png)
-![image](https://user-images.githubusercontent.com/17581178/129751598-740adad0-022d-463e-b3ef-2d8145ff26ab.png)
-![image](https://user-images.githubusercontent.com/17581178/129751641-1603acbf-d8fd-4f1a-a8f6-3cc746228e9d.png)
-![image](https://user-images.githubusercontent.com/17581178/129751722-7644779e-18a3-4d78-8091-4697baea737c.png)
-
+![image](https://user-images.githubusercontent.com/17581178/130055616-6e0651c4-f45b-4ea2-9c33-8198418f6186.png)
+![image](https://user-images.githubusercontent.com/17581178/130055684-c73b4189-4db0-4e7a-882f-af9468757163.png)
+![image](https://user-images.githubusercontent.com/17581178/130056919-32306fc3-7c45-4e3f-b40b-6c7ed03967cc.png)
+![image](https://user-images.githubusercontent.com/17581178/130055773-8492d0d9-6d35-4950-9089-6f1a6715df9d.png)
+![image](https://user-images.githubusercontent.com/17581178/130055819-814785d7-2a3c-42c0-9f6b-7a23178363c2.png)
+![image](https://user-images.githubusercontent.com/17581178/130055855-02585079-82cb-419b-b722-b7dc58761daf.png)
+![image](https://user-images.githubusercontent.com/17581178/130057216-b216aa57-8264-4bdb-8371-3c80b20b1e42.png)
+![image](https://user-images.githubusercontent.com/17581178/130055160-0786b9d7-1794-454f-937a-d6662f5a6bca.png)
 
 
 
@@ -17,7 +21,7 @@
 - [x] Navigation Tab Bar
 - [x] Headlines Page
 - [x] Sources Page
-- [ ] Saves Page (CRUD API available | Link View controllers!!)
+- [x] Saves Page (CRUD API available )
 
 ### Expected to be used
 
@@ -31,8 +35,18 @@
 - [x] MVVM
 - [x] Swift syntax
 - [x] Filter sources to be only for -English language
-- [ ] CRUD API to handle Saved Headlines
+- [x] CRUD API to handle Saved Headlines
 
-### Dev Notes
+## Dev Notes
 
 I've aditionally implemented a CRUD API in Aws to handle Saved Pages https://github.com/jacastillob/mvvm-medibank-test/tree/main/AWS
+
+![image](https://user-images.githubusercontent.com/17581178/130054466-0ce8167c-ea54-4e61-8e73-d6c53401a89a.png)
+
+
+### Potential Improvements
+
+- [ ] Downloading pictures (requires better handling or thumbnails)
+- [ ] Improve Launch Screen
+
+
