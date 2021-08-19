@@ -1,12 +1,13 @@
-# AWS Resources
+# AWS Resources - CRUD API
 
 I 've decided to create a CRUD API with Lambda and DynamoDB to handle Save Headlines
 
-## DynamoDB table -> SavedHeadline
+![image](https://user-images.githubusercontent.com/17581178/130054466-0ce8167c-ea54-4e61-8e73-d6c53401a89a.png)
 
+- DynamoDB table :  SavedHeadline
 
-## Lambda Function -> SavedHeadlineFunction
+- Lambda Function : SavedHeadlineFunction (medibank-test-role)
 
-medibank-test-role
+- API Gateway : HttpCrudSavedHeadlinesApi
 
-## API Gateway -> HttpCrudSavedHeadlinesApi
+*Postman Collection File Added to this folder*
