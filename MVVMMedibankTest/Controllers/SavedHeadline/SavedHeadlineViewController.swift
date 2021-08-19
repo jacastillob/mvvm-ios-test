@@ -8,7 +8,6 @@ import UIKit
 
 
 class SavedHeadlineViewController: UIViewController {
-   
     
     
     @IBOutlet  var savedHeadlineTableView: UITableView!
@@ -16,14 +15,11 @@ class SavedHeadlineViewController: UIViewController {
     private var savedHeadlineViewModel : SavedHeadlinesViewModel!
     
     private var dataSource : SavedHeadlineTableViewDataSource<SavedHeadlineTableViewCell,SavedHeadlineData>!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.savedHeadlineTableView.delegate = self
-      
         callToViewModelForUIUpdate()
-        
     }
     
     func callToViewModelForUIUpdate(){
@@ -44,27 +40,28 @@ class SavedHeadlineViewController: UIViewController {
             self.savedHeadlineTableView.dataSource = self.dataSource
             self.savedHeadlineTableView.reloadData()
         }
-        
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.destination is HeadlineDetailViewController {
             let vc = segue.destination as? HeadlineDetailViewController
-            let cell = sender as! HeadlineTableViewCell
-            vc?.headline = (cell.headline!)
+            let cell = sender as! SavedHeadlineTableViewCell
+            vc?.urlHeadline = (cell.savedHeadline?.url!)
         }
     }
-    
 }
 
 extension SavedHeadlineViewController:UITableViewDelegate{
     
-
-    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
      let DeleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (action, view, success) in
-         print("Delete")
+        let alert = UIAlertController(title: "Deleting Headline", message: "", preferredStyle: .alert)
+        self.present(alert, animated: true)
+        self.savedHeadlineViewModel.deleteSaveHeadline(id: (self.dataSource.items[indexPath.row].id! ) )
+        self.dismiss(animated: true)
+        self.callToViewModelForUIUpdate()
+        
      })
      DeleteAction.backgroundColor = .red
      return UISwipeActionsConfiguration(actions: [DeleteAction])

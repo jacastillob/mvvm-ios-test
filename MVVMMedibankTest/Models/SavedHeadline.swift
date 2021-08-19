@@ -16,7 +16,7 @@ struct SavedHeadlines: Decodable {
   }
 // MARK: - Datum
 struct SavedHeadlineData: Decodable {
-    
+    let id: String?
     let author: String?
     let title: String?
     let description: String?
@@ -27,6 +27,7 @@ struct SavedHeadlineData: Decodable {
     
     enum CodingKeys: String, CodingKey {
        
+        case id = "id"
         case author = "author"
         case title = "title"
         case description = "description"

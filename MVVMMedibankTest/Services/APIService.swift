@@ -56,5 +56,82 @@ class APIService :  NSObject {
         task.resume()
     }
     
+    func putHeadline(newHeadline: HeadlineData){
+        
+        guard let url = URL(string: "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines") else {
+                    print("Error: cannot create URL")
+                    return
+                }
+        // Create model
+        struct UploadData: Codable {
+            let id: String
+            let sourceName: String
+            let author: String
+            let title: String
+            let description: String
+            let url: String
+            let urlToImage: String
+        }
+ 
+        
+        let uploadDataModel = UploadData(id: UUID().uuidString,
+                                         sourceName: newHeadline.source.name ?? "",
+                                         author:newHeadline.author ?? "",
+                                         title:newHeadline.title ?? "",
+                                         description:newHeadline.description ?? "",
+                                         url:newHeadline.url ?? "",
+                                         urlToImage:newHeadline.urlToImage ?? "")
+   
+        
+        // Convert model to JSON data
+        guard let jsonData = try? JSONEncoder().encode(uploadDataModel) else {
+            print("Error: Trying to convert model to JSON data")
+            return
+        }
+     
+       var request = URLRequest(url: url)
+                request.httpMethod = "PUT"
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpBody = jsonData
+                URLSession.shared.dataTask(with: request) { data, response, error in
+                    guard error == nil else {
+                        print("Error: error calling PUT")
+                        print(error!)
+                        return
+                    }
+                    
+                    guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
+                        print("Error: HTTP request failed")
+                        return
+                    }
+                   
+                }.resume()
+        
+        
+    }
+    
+    func deleteSavedHeadline(id : String ) {
+        
+        
+            let url = URL(string: "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines/"+id)!
+         
+            // Create the request
+            var request = URLRequest(url: url)
+            request.httpMethod = "DELETE"
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard error == nil else {
+                    print("Error: error calling DELETE")
+                    print(error!)
+                    return
+                }
+              
+                guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
+                    print("Error: HTTP request failed")
+                    return
+                }
+               
+            }.resume()
+        }
+    
     
 }

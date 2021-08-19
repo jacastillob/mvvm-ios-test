@@ -29,4 +29,9 @@ class SavedHeadlinesViewModel : NSObject {
                 self.savedHeadlineData = savedHeadlineData
             }
         }
+    func deleteSaveHeadline(id: String) {
+            self.apiService.deleteSavedHeadline (id: id)
+        }
+    
+    
 }

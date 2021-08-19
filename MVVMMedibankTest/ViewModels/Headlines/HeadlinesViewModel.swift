@@ -30,4 +30,7 @@ class HeadlinesViewModel : NSObject {
                 self.headlineData = headlineData
             }
         }
+    func saveHeadline(newHeadline: HeadlineData) {
+            self.apiService.putHeadline (newHeadline: newHeadline)
+        }
 }

@@ -10,7 +10,7 @@ import UIKit
 class HeadlineDetailViewController: UIViewController {
         
     @IBOutlet weak var webView: WKWebView!
-    var headline: HeadlineData!
+    var urlHeadline: String!
     
         override func viewDidLoad() {
                 super.viewDidLoad()
@@ -20,7 +20,7 @@ class HeadlineDetailViewController: UIViewController {
          func loadURL(){
             
             
-            guard let headlineUrl:URL = URL(string: headline?.url ?? "https://www.google.com/") else {
+            guard let headlineUrl:URL = URL(string: urlHeadline ?? "https://www.google.com/") else {
                return
            }
             let urlRequest = URLRequest(url: headlineUrl)
