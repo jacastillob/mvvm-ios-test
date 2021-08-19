@@ -7,7 +7,7 @@
 import UIKit
 
 
-class SavedHeadlineViewController: UIViewController, UITableViewDelegate {
+class SavedHeadlineViewController: UIViewController {
    
     
     
@@ -21,8 +21,7 @@ class SavedHeadlineViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.savedHeadlineTableView.delegate = self
-        self.savedHeadlineTableView.rowHeight = UITableView.automaticDimension
-        self.savedHeadlineTableView.estimatedRowHeight = 400
+      
         callToViewModelForUIUpdate()
         
     }
@@ -56,5 +55,19 @@ class SavedHeadlineViewController: UIViewController, UITableViewDelegate {
             vc?.headline = (cell.headline!)
         }
     }
+    
+}
+
+extension SavedHeadlineViewController:UITableViewDelegate{
+    
+
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+     let DeleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (action, view, success) in
+         print("Delete")
+     })
+     DeleteAction.backgroundColor = .red
+     return UISwipeActionsConfiguration(actions: [DeleteAction])
+   }
     
 }

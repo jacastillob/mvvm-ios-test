@@ -7,7 +7,7 @@
 import UIKit
 
 
-class HeadlineViewController: UIViewController, UITableViewDelegate {
+class HeadlineViewController: UIViewController {
    
     
     
@@ -21,8 +21,6 @@ class HeadlineViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.headlineTableView.delegate = self
-        self.headlineTableView.rowHeight = UITableView.automaticDimension
-        self.headlineTableView.estimatedRowHeight = 400
         callToViewModelForUIUpdate()
         
     }
@@ -58,3 +56,15 @@ class HeadlineViewController: UIViewController, UITableViewDelegate {
     }
     
 }
+extension HeadlineViewController:UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+     let AddAction = UIContextualAction(style: .destructive, title: "Save", handler: { (action, view, success) in
+         print("Save")
+     })
+     AddAction.backgroundColor = .blue
+     return UISwipeActionsConfiguration(actions: [AddAction])
+   }
+    
+}
+
