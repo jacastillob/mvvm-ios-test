@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "b5f89523-7d58-4ac2-b116-c80718a5c381",
+		"name": "MEDIBANK TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "everything",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=bitcoin&apiKey=6b92fe20c03b4f8d81991cd6818f915d",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin"
+						},
+						{
+							"key": "apiKey",
+							"value": "6b92fe20c03b4f8d81991cd6818f915d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Headlines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?q=au&apiKey=6b92fe20c03b4f8d81991cd6818f915d",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "au"
+						},
+						{
+							"key": "apiKey",
+							"value": "6b92fe20c03b4f8d81991cd6818f915d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?language=en&apiKey=6b92fe20c03b4f8d81991cd6818f915d",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "apiKey",
+							"value": "6b92fe20c03b4f8d81991cd6818f915d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/savedhealines",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"12313213123123222\",\n    \"sourceName\": \"CBC News\",\n     \"author\": \"CBC News\",\n     \"title\": \"How struggling with infertility changed me forever | CBC News\",\n     \"description\": \"The infertility diagnosis made me feel like damaged goods. While I could accept that I did not have a normal reproductive system, never did I imagine it would cause a problem for us.\",\n     \"url\": \"http://www.cbc.ca/news/canada/montreal/first-person-infertility-motherhood-1.6143140\",\n     \"urlToImage\": \"https://i.cbc.ca/1.6143141.1629157929!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/how-struggling-with-infertility-changed-me-forever-image-1.jpg\",\n      \"publishedAt\": \"2021-08-19T08:07:40.7933608Z\",\n      \"content\": \"This First Person article is the experience of Kathy Giangaspero, a health-care communications specialist in Montreal. For more information about CBC's First Person stories, please see the FAQ\\r\\n.\\r\\nSo… [+5898 chars]\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines",
+					"protocol": "https",
+					"host": [
+						"7eva400bz6",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"savedhealines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savedhealines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines",
+					"protocol": "https",
+					"host": [
+						"7eva400bz6",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"savedhealines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savedhealines/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines/12313213123123",
+					"protocol": "https",
+					"host": [
+						"7eva400bz6",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"savedhealines",
+						"12313213123123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savedhealines/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://7eva400bz6.execute-api.ap-southeast-2.amazonaws.com/savedhealines/12313213123123",
+					"protocol": "https",
+					"host": [
+						"7eva400bz6",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"savedhealines",
+						"12313213123123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -59,7 +59,7 @@ class HeadlineViewController: UIViewController {
 extension HeadlineViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-     let AddAction = UIContextualAction(style: .destructive, title: "Save", handler: { (action, view, success) in
+        let AddAction = UIContextualAction(style: .destructive, title: "Save", handler: { (action, view, success) in
         let alert = UIAlertController(title: "Saving Headline", message: "", preferredStyle: .alert)
         self.present(alert, animated: true)
         self.headlineViewModel.saveHeadline(newHeadline: (self.dataSource.items[indexPath.row] ) )

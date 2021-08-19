@@ -13,7 +13,7 @@ class APIService :  NSObject {
     
     func getHeadlinesData(completion : @escaping (Headlines) -> ()){
         
-        let sourcesURL = URL(string: "https://newsapi.org/v2/top-headlines?q=au&apiKey="+apiKey)!
+        let sourcesURL = URL(string: "https://newsapi.org/v2/top-headlines?q=au&language=en&apiKey="+apiKey)!
         
         let task = URLSession.shared.dataTask(with: sourcesURL) { data, response, error in
             //print(String(data: data!, encoding: .utf8))
