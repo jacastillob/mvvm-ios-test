@@ -15,7 +15,7 @@ class HeadlineViewController: UIViewController {
     
     private var headlineViewModel : HeadlinesViewModel!
     
-    private var dataSource : HeadlineTableViewDataSource<HeadlineTableViewCell,HeadlineData>!
+    private var dataSource : TableViewDataSource<HeadlineTableViewCell,HeadlineData>!
     
 
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class HeadlineViewController: UIViewController {
     
     func updateDataSource(){
         
-        self.dataSource = HeadlineTableViewDataSource(cellIdentifier: "HeadlineTableViewCell", items: self.headlineViewModel.headlineData.articles, configureCell: { (cell, evm) in
+        self.dataSource = TableViewDataSource(cellIdentifier: "HeadlineTableViewCell", items: self.headlineViewModel.headlineData.articles, configureCell: { (cell, evm) in
                     cell.headline = evm
                 })
         

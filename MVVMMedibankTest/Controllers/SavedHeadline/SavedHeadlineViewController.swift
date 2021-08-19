@@ -14,7 +14,7 @@ class SavedHeadlineViewController: UIViewController {
     
     private var savedHeadlineViewModel : SavedHeadlinesViewModel!
     
-    private var dataSource : SavedHeadlineTableViewDataSource<SavedHeadlineTableViewCell,SavedHeadlineData>!
+    private var dataSource : TableViewDataSource<SavedHeadlineTableViewCell,SavedHeadlineData>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class SavedHeadlineViewController: UIViewController {
     
     func updateDataSource(){
         
-        self.dataSource = SavedHeadlineTableViewDataSource(cellIdentifier: "SavedHeadlineTableViewCell", items: self.savedHeadlineViewModel.savedHeadlineData.Items, configureCell: { (cell, evm) in
+        self.dataSource = TableViewDataSource(cellIdentifier: "SavedHeadlineTableViewCell", items: self.savedHeadlineViewModel.savedHeadlineData.Items, configureCell: { (cell, evm) in
                     cell.savedHeadline = evm
                 })
         

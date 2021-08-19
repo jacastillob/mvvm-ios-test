@@ -11,7 +11,7 @@ class SourceViewController: UIViewController {
     @IBOutlet weak var sourceTableView: UITableView!
 
     private var sourceViewModel : SourcesViewModel!
-    private var dataSource : SourceTableViewDataSource<SourceTableViewCell,SourceData>!
+    private var dataSource : TableViewDataSource<SourceTableViewCell,SourceData>!
     
 
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class SourceViewController: UIViewController {
     
     func updateDataSource(){
         
-        self.dataSource = SourceTableViewDataSource(cellIdentifier: "SourceTableViewCell", items: self.sourceViewModel.sourceData.sources, configureCell: { (cell, evm) in
+        self.dataSource = TableViewDataSource(cellIdentifier: "SourceTableViewCell", items: self.sourceViewModel.sourceData.sources, configureCell: { (cell, evm) in
                     cell.source = evm
                 })
         

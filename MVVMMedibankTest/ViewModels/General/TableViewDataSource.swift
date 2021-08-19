@@ -1,14 +1,14 @@
 //
-//  HeadlineTableViewDataSource.swift
-//  MVVMTest
+//  TableViewDataSource.swift
+//  MVVMMedibankTest
 //
-//  Created by Jonathan Castillo on 16/8/21.
+//  Created by Jonathan Castillo on 19/8/21.
 //
 
 import Foundation
 import UIKit
 
-class HeadlineTableViewDataSource<CELL : UITableViewCell,T> : NSObject, UITableViewDataSource {
+class TableViewDataSource<CELL : UITableViewCell,T> : NSObject, UITableViewDataSource {
     
     private var cellIdentifier : String!
     var items : [T]!
