@@ -1,10 +1,9 @@
-# Medibank-Digital  (Proof of Concept)
+# iOS (Proof of Concept)
 
  iOS Native Proof of Concept App using Swift/UIKit that displays trend articles and allow the user to save news for reading later
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/17581178/129751970-cf050dc5-31d5-45c9-873c-810f18c06db5.png)
 ![image](https://user-images.githubusercontent.com/17581178/130055616-6e0651c4-f45b-4ea2-9c33-8198418f6186.png)
 ![image](https://user-images.githubusercontent.com/17581178/130055684-c73b4189-4db0-4e7a-882f-af9468757163.png)
 ![image](https://user-images.githubusercontent.com/17581178/130056919-32306fc3-7c45-4e3f-b40b-6c7ed03967cc.png)
